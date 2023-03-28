@@ -1,0 +1,5 @@
+resposta = input("quanto é 2+2? :")
+if resposta == "4" :
+ print("acertou!")
+else:
+ print("errou!")
