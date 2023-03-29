@@ -1,0 +1,135 @@
+#código em python para se divertir com 3 dados
+
+print("Bem vindo ao adivinhador de números!!!")
+print("Welcome to mathematical magic")
+print()
+print(
+  "para usar este programa você precisa de 3 dados de 6 faces, ou escolha um número de 3 até 18"
+)
+print(
+  "To use this programm you need 3 dices 6 faces or choose a number from 3 to 18"
+)
+print()
+print("OBS: responda as perguntas com Y ou N")
+print()
+
+while True:
+  print("Are you ready?")
+  preparado = input("Y or N ??: ")
+  if preparado == "Y":
+    break
+print("OK let's go!")
+print()
+print()
+print("Roll your dices!")
+impar = input("Seu número pode ser dividido por 3?:")
+par = input("E por 2?:")
+if impar == "Y" and par == "N":
+  print("Ok!")
+  print()
+  numbInp = input("Pode ser dividido por um numero além do 3 sem ser pelo próprio número?")
+  if numbInp == "Y":
+    print("O número nos seus dados é 15!")
+    exit()
+  else:
+   print("Então pegue seu número e diminua por 2!")
+  numbInp2 = input("Agora, seu número é maior que 2?")
+  if numbInp2 == "Y":
+    print("O número em seus dados é 9!")
+    exit()
+  elif numbInp2 == "N":
+    print("O número em seus dados é 3!")
+    exit()
+  else:
+    print("Trapaça detectada! Reinicie o jogo!")
+    exit()
+elif impar == "N" and par == "N":
+ print("Ok!")
+ print()
+ print("Diminua seu numero por 3!")
+ print()
+ print("Agora divida por 2!")
+ print()
+ numbNinpar = input("Seu número é maior que 2?:")
+ numbNinpar2 = input("Seu número é menor do que 2?:")
+ if numbNinpar == "N" and numbNinpar2 == "N":
+  print("O número em seus dados é 7!")
+  exit()
+ elif numbNinpar == "N" and numbNinpar2 == "Y":
+  print("O número em seus dados é 5")
+  exit()
+ elif numbNinpar == "Y" and numbNinpar2 == "N":
+  maiorpar = input("É par?:")
+  if maiorpar == "Y":
+   print("O número em seus dados é 11!")
+  elif maiorpar == "N":
+   print("Diminua seu número por 3")
+   cincosete = input("Seu número agora ficou 2?")
+   if cincosete == "Y":
+    print("O número em seus dados é 13!")
+    exit()
+   elif cincosete == "N":
+    print("O número em seus dados é 17!")
+    exit()
+   else:
+    print("Trapaça detectada! Reinicie o jogo")
+    exit()
+ elif impar == "Y" and par == "Y":
+  print("Ok!")
+  print()
+  print("Divida seu número po 3!")
+ YY1 = input("Seu número esta maior do que 3?")
+ if YY1 == "N":
+  print("O número em seus dados é 6!")
+ elif YY1 == "Y":
+  print()
+  YY2 = input("Seu número continua sendo divisivel por 3?")
+  if YY2 == "N":
+   print("O número em seus dados é 18!")
+   exit()
+  elif YY2 == "Y":
+    print("O número em seus dados é 12!")
+    exit()
+  else:
+    print("Trapaça detectada! Reinicie o jogo")
+    exit()
+elif impar == "N" and par == "Y":
+  print("Ok!")
+  print()
+  print("Divida seu número por 2")
+  print()
+  print("Agora diminua seu número por 1")
+  NY = input("Seu número ficou impar?")
+  if NY == "Y":
+    print("Ok!")
+    print()
+    NYimpar = print("Seu número é maior do que 3?")
+    NYimpar2 = print("Seu número é menor do que 3?")
+    if NYimpar == "N" and NYimpar2 == "N":
+      print("O número em seus dados é 8!")
+      exit()
+    elif NYimpar == "Y" and NYimpar2 == "N":
+      print("O número em seus dados é 16")
+      exit()
+    elif NYimpar == "N" and NYimpar2 == "Y":
+      print("O número em seus dados é 4!")
+      exit()
+    else:
+      print("Trapaça detectada! Reinicie o jogo")
+      exit()
+  elif NY == "N":
+    print("Ok!")
+    print()
+    print("Diminua seu número por 3")
+    print()
+    NYn = input("Seu número agora é divisivel por 3?")
+    if NYn == "N":
+      print("O número em seus dados é 10!")
+      exit()
+    elif NYn == "Y":
+      print("O número em seus dados é 14!")
+      exit()
+    else:
+      print("Trapaça detectada! Reinicie o jogo")
+      exit()
+     
